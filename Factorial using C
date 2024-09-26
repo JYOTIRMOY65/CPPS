@@ -1,3 +1,5 @@
+//Program Name: Find factorial of a number using function.
+//Date: 26/09/2024
 #include<stdio.h>
 Fact(int);
 main()

@@ -1,4 +1,5 @@
-
+//Program Name: Calculator using function
+//Date: 26/09/2024
 #include <stdio.h>
 
 void addition() {

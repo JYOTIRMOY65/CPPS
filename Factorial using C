@@ -1,17 +1,17 @@
 //Program Name: Find factorial of a number using function.
 //Date: 26/09/2024
 #include<stdio.h>
-Fact(int);
+fact(int);
 main()
 {
     int i,factorial,num;
     printf("Enter a number: ");
     scanf("%d",&num);
-    factorial = Fact(num);
+    factorial = fact(num);
     printf("Factorial of %d is: %d",num,factorial);
     
 }
-int Fact(int num)
+int fact(int num)
 {
     int i,f=1;
     for(i=1;i<=num;i++)

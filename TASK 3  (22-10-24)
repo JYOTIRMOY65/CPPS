@@ -1,19 +1,16 @@
-//program : create a structure to representa book which includes fields for title author and publication year . Additionally ceate another structure for a library that contains an array of books. writea program that initializes library and displays books 
+//Program Name:- Create a structure to represent a book which includes fields for title author and publication year. Additionally ceate another structure for a library that contains an array of books. Write a program that initializes library and displays list of books.
+//Date:- 22/10/24
+
 #include<stdio.h>
-
-
 struct Book {
     char title[100];
     char author[100];
     int Year;
 };
-
-
 struct Library {
     struct Book books[100];  
     int Count;           
 };
-
 void displayLibrary(struct Library library) {
     printf("\nLibrary contains foolowing books:\n");
     for (int i = 0; i < library.Count; i++) {
@@ -22,20 +19,14 @@ void displayLibrary(struct Library library) {
         printf("  Publication Year: %d\n", library.books[i].Year);
     }
 }
-
 int main() {
     struct Library library;
     printf("Enter the number of books in the library: ");
     scanf("%d", &library.Count);
-
-
     for (int i = 0; i < library.Count; i++) {
         printf("Enter details for Book:\n");
         printf("  Title:\n author : \n published year: \n");
         scanf(" %s %s %d", library.books[i].title,library.books[i].author,&library.books[i].Year);  
-        
     }
-
-
     displayLibrary(library);
 }

@@ -1,4 +1,4 @@
-//Program : Write a program that allows user to to input information for multiple students and then displays the result of each one.
+//Program Name: Write a program that allows user to to input information for multiple students and then displays the result of each one.
 //Date: 22/10/24
 
 #include<stdio.h>

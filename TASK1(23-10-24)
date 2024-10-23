@@ -1,0 +1,32 @@
+//Task 1
+//Date: 23/10/24 
+
+#include<stdio.h>
+#include<stdlib.h> 
+#include<conio.h>
+struct Student
+{
+	char n[20];
+	int age;
+	char g[5];
+}I;
+main ()
+{
+	struct Student std;
+	printf("Enter student info \n"); 
+	printf("Enter student name \n"); 
+	scanf("%s", std.n); 
+	printf("Enter age: \n"); 
+	scanf("%d", &std.age); 
+	printf("Enter grade: \n"); 
+	scanf("%s", &std.g);
+	display(&std);
+}
+display (struct Student *s)
+{
+	printf("\nStudent Info \n"); 
+	printf("Student name: %s\n",s->n); 
+	printf("Student age: %d\n",s->age); 
+	printf("Student grade: %s\n",s->g); 
+	return(0);
+}
